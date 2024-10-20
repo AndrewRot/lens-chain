@@ -1,12 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.2; //Do not change the solidity version as it negatively impacts submission grading
-
-//// Useful for debugging. Remove when deploying to a live network.
-import "hardhat/console.sol";
-//
-//// Use openzeppelin to inherit battle-tested implementations (ERC20, ERC721, etc)
-//// import "@openzeppelin/contracts/access/Ownable.sol";
-//
+pragma solidity ^0.8.2;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
@@ -14,15 +7,10 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract YourCollectible is
-ERC721,
-ERC721Enumerable,
-ERC721URIStorage,
-Ownable
-{
+contract YourCollectible is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
 	using Counters for Counters.Counter;
 
-	Counters.Counter public tokenIdCounter;
+	Counters.Counter private tokenIdCounter;
 
 	constructor() ERC721("YourCollectible", "YCB") {}
 
@@ -38,38 +26,29 @@ Ownable
 		return tokenId;
 	}
 
-	// The following functions are overrides required by Solidity.
+	// Fix the visibility of this function to public
+	function totalSupply() public view override returns (uint256) {
+		return tokenIdCounter.current();
+	}
 
-	function _beforeTokenTransfer(
-		address from,
-		address to,
-		uint256 tokenId,
-		uint256 quantity
-	) internal override(ERC721, ERC721Enumerable) {
+	function getTokenByIndex(uint256 index) external view returns (uint256) {
+		require(index < totalSupply(), "Index out of bounds");
+		return tokenByIndex(index);
+	}
+
+	function _beforeTokenTransfer(address from, address to, uint256 tokenId, uint256 quantity) internal override(ERC721, ERC721Enumerable) {
 		super._beforeTokenTransfer(from, to, tokenId, quantity);
 	}
 
-	function _burn(
-		uint256 tokenId
-	) internal override(ERC721, ERC721URIStorage) {
+	function _burn(uint256 tokenId) internal override(ERC721, ERC721URIStorage) {
 		super._burn(tokenId);
 	}
 
-	function tokenURI(
-		uint256 tokenId
-	) public view override(ERC721, ERC721URIStorage) returns (string memory) {
+	function tokenURI(uint256 tokenId) public view override(ERC721, ERC721URIStorage) returns (string memory) {
 		return super.tokenURI(tokenId);
 	}
 
-	function supportsInterface(
-		bytes4 interfaceId
-	)
-	public
-	view
-	override(ERC721, ERC721Enumerable, ERC721URIStorage)
-	returns (bool)
-	{
+	function supportsInterface(bytes4 interfaceId) public view override(ERC721, ERC721Enumerable, ERC721URIStorage) returns (bool) {
 		return super.supportsInterface(interfaceId);
 	}
 }
-

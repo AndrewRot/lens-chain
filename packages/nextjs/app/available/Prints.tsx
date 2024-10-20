@@ -1,30 +1,55 @@
-import type { NextPage } from "next";
+"use client";
+
 import { useEffect, useState } from "react";
-import { ethers } from "ethers";
-import { getMetadata } from "~~/utils/scaffold-eth/getMetadata";
-import NFTCard from "./NFTCard"; // Import the new NFTCard component
+// import Image from "next/image";
+// import { MyNFTCard } from "./MyNFTCard";
+import { useAccount } from "wagmi";
+import {NFTCard} from "../collection/_components/NFTCard";
+import { useScaffoldReadContract } from "~~/hooks/scaffold-eth";
 
-// Replace with your contract's ABI and address
-// import NFTContractABI from "../contracts/NFTContract.json";
-const NFT_CONTRACT_ADDRESS = "YOUR_NFT_CONTRACT_ADDRESS";
+// Assuming you have a separate NFTCard component
 
-export const metadata = getMetadata({
-  title: "Available NFTs",
-  description: "Browse and buy available NFTs",
-});
+const Prints = () => {
+  const { address: connectedAddress, isConnected } = useAccount();
 
-const Prints: NextPage = () => {
-  const [prints, setPrints] = useState<any[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [currentAccount, setCurrentAccount] = useState<string>("");
+  const [allNFTs, setAllNFTs] = useState([]);
+  // const [nfts, setNfts] = useState([]);
 
-  
+  const { data: nextTokenId } = useScaffoldReadContract({
+    contractName: "YourCollectible",
+    functionName: "nextTokenId",
+    watch: true,
+  } as any);
+
+  useEffect(() => {
+    const fetchAllNFTs = async () => {
+      if (!nextTokenId) return;
+
+      const nfts = [];
+      const totalTokens = Number(nextTokenId);
+
+      for (let index = 0; index < totalTokens; index++) {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        const token = await useScaffoldReadContract({
+          contractName: "YourCollectible",
+          functionName: "getTokenByIndex",
+          args: [index], // Only index is needed
+        } as any);
+
+        nfts.push(token);
+      }
+      setAllNFTs(nfts);
+    };
+
+    fetchAllNFTs();
+  }, [nextTokenId]);
+
   return (
-    <>
-      <div className="text-center mt-8 p-10">
-        <h1 className="text-4xl my-0">Available Prints</h1>
-      </div>
-    </>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
+      {allNFTs.map((nft, index) => (
+        <NFTCard key={index} nft={nft} />
+      ))}
+    </div>
   );
 };
 
