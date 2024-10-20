@@ -2,20 +2,17 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { MyHoldings } from "./_components";
 import type { NextPage } from "next";
-// import { getUserNFTs, mintNFT } from "~~/utils/scaffold-eth/contractFunctions";
 import { useAccount } from "wagmi";
 import { useScaffoldReadContract, useScaffoldWriteContract } from "~~/hooks/scaffold-eth";
 import { notification } from "~~/utils/scaffold-eth";
 import { addToIPFS } from "~~/utils/simpleNFT/ipfs-fetch";
 import nftsMetadata from "~~/utils/simpleNFT/nftsMetadata";
-import { MyHoldings } from "./_components";
 
 const Collection: NextPage = () => {
   const { address: connectedAddress, isConnected, isConnecting } = useAccount();
-
   const { writeContractAsync } = useScaffoldWriteContract("YourCollectible");
-
   const { data: tokenIdCounter } = useScaffoldReadContract({
     contractName: "YourCollectible",
     functionName: "tokenIdCounter",
@@ -31,6 +28,8 @@ const Collection: NextPage = () => {
   });
   const [poem, setPoem] = useState("");
   const [userNFTs, setUserNFTs] = useState([]);
+  const [uploadedImage, setUploadedImage] = useState<File | null>(null);
+  const [imagePreview, setImagePreview] = useState<string | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -39,10 +38,27 @@ const Collection: NextPage = () => {
     });
   };
 
+  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      setUploadedImage(file);
+      console.log('file');
+      console.log(file);
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImagePreview(reader.result as string);
+        console.log('setImagePreview');
+        console.log(reader.result);
+      };
+      reader.readAsDataURL(file);
+      console.log('readAsDataURL');
+      console.log(reader);
+    }
+  };
+
   useEffect(() => {
     const fetchNFTs = async () => {
-      // const nfts = await getUserNFTs();
-      const nfts = [];
+      const nfts = []; // Replace with your fetching logic
       setUserNFTs(nfts);
     };
     fetchNFTs();
@@ -55,58 +71,44 @@ const Collection: NextPage = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        // messages: [{ role: "user", content: message }],
-        messages: [{ role: "user", content: `Create a poem about ${formData.name}: ${formData.description} , and limit it to 50 words or less` }],
+        messages: [
+          {
+            role: "user",
+            content: `Create a poem about ${formData.name}: ${formData.description} , and limit it to 50 words or less`,
+          },
+        ],
       }),
     });
     const data = await res.json();
-    console.log(data);
-    // setResponse(data.content);
-    // setMessage("");
     setPoem(data.content);
   };
-
 
   const mint = async () => {
     setShowModal(false);
 
-    // Ensure tokenIdCounter is defined
     if (tokenIdCounter === undefined) return;
 
     const tokenIdCounterNumber = Number(tokenIdCounter);
-    // Get the current NFT metadata
     const currentTokenMetaData = nftsMetadata[tokenIdCounterNumber % nftsMetadata.length];
 
-    // Prepare the updated metadata using the form data
     const updatedMetaData = {
       ...currentTokenMetaData,
-      name: formData.name, // Use input form's name
-      description: formData.description, // Use input form's description
-      image: formData.url, // Use input form's URL
+      name: formData.name,
+      description: formData.description,
+      image: uploadedImage ? await addToIPFS(uploadedImage) : formData.url, // Use the uploaded image
+      // image: imagePreview ? imagePreview : formData.url, // Use the uploaded image
     };
-    // updatedMetaData.attributes.push({
-    //   trait_type: "Poem",
-    //   value: poem,
-    // });
 
     const notificationId = notification.loading("Uploading to IPFS");
     try {
       const uploadedItem = await addToIPFS(updatedMetaData);
-
-      // Remove previous loading notification and show success notification
       notification.remove(notificationId);
       notification.success("Metadata uploaded to IPFS");
 
-      // Call the mintItem function on the smart contract
       await writeContractAsync({
         functionName: "mintItem",
         args: [connectedAddress, uploadedItem.path],
       });
-
-      // Optional: Fetch user NFTs again after minting
-      // const nfts = await getUserNFTs();
-      // setUserNFTs(nfts);
-
     } catch (error) {
       notification.remove(notificationId);
       console.error(error);
@@ -131,14 +133,18 @@ const Collection: NextPage = () => {
           <div className="modal-box bg-white p-6 rounded shadow-lg">
             <form>
               <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">URL:</label>
+                <label className="block text-sm font-medium text-gray-700">Upload Image:</label>
                 <input
-                  type="text"
-                  name="url"
-                  value={formData.url}
-                  onChange={handleInputChange}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleImageUpload}
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
                 />
+                {imagePreview && (
+                  <div className="mt-2">
+                    <Image src={imagePreview} alt="Image Preview" width={200} height={200} className="rounded" />
+                  </div>
+                )}
               </div>
 
               <div className="mb-4">
@@ -201,7 +207,7 @@ const Collection: NextPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
         {userNFTs.map((nft, index) => (
           <div key={index} className="nft-card bg-white shadow-md rounded p-4">
-            <Image src={nft.url} alt={nft.name} width={300} height={300} className="rounded" />
+            <Image src={nft.image || nft.url} alt={nft.name} width={300} height={300} className="rounded" />
             <h3 className="text-lg font-bold mt-2">{nft.name}</h3>
             <p>{nft.description}</p>
             <p>Price: {nft.cost} ETH</p>
