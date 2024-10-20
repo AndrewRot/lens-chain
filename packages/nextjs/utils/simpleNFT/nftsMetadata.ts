@@ -1,124 +1,64 @@
 const nftsMetadata = [
   {
-    description: "It's actually a bison?",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/buffalo.jpg",
-    name: "Buffalo",
+    description: "not looking",
+    external_url: "https://images.unsplash.com/photo-1453974336165-b5c58464f1ed?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fHBob3RvZ3JhcGh5fGVufDB8fDB8fHww", // <-- this can link to a page for the specific file too
+    image: "https://images.unsplash.com/photo-1453974336165-b5c58464f1ed?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fHBob3RvZ3JhcGh5fGVufDB8fDB8fHww",
+    name: "not looking",
     attributes: [
       {
-        trait_type: "BackgroundColor",
-        value: "green",
+        trait_type: "",
+        value: "",
       },
       {
-        trait_type: "Eyes",
-        value: "googly",
+        trait_type: "",
+        value: "",
       },
       {
-        trait_type: "Stamina",
-        value: 42,
+        trait_type: "",
+        value:"",
       },
     ],
   },
   {
-    description: "What is it so worried about?",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/zebra.jpg",
-    name: "Zebra",
+    description: "holding camera",
+    external_url: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBob3RvZ3JhcGh5fGVufDB8fDB8fHww", // <-- this can link to a page for the specific file too
+    image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBob3RvZ3JhcGh5fGVufDB8fDB8fHww",
+    name: "CamCam",
     attributes: [
       {
-        trait_type: "BackgroundColor",
-        value: "blue",
+        trait_type: "",
+        value: "",
       },
       {
-        trait_type: "Eyes",
-        value: "googly",
+        trait_type: "",
+        value: "",
       },
       {
-        trait_type: "Stamina",
-        value: 38,
+        trait_type: "",
+        value: "",
       },
     ],
   },
   {
-    description: "What a horn!",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/rhino.jpg",
-    name: "Rhino",
+    description: "golden sunset",
+    external_url: "https://images.unsplash.com/photo-1598245615049-c86df18526ab?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // <-- this can link to a page for the specific file too
+    image: "https://images.unsplash.com/photo-1598245615049-c86df18526ab?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "sunset",
     attributes: [
       {
-        trait_type: "BackgroundColor",
-        value: "pink",
+        trait_type: "",
+        value: "",
       },
       {
-        trait_type: "Eyes",
-        value: "googly",
+        trait_type: "",
+        value: "",
       },
       {
-        trait_type: "Stamina",
-        value: 22,
+        trait_type: "",
+        value:"",
       },
     ],
-  },
-  {
-    description: "Is that an underbyte?",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/fish.jpg",
-    name: "Fish",
-    attributes: [
-      {
-        trait_type: "BackgroundColor",
-        value: "blue",
-      },
-      {
-        trait_type: "Eyes",
-        value: "googly",
-      },
-      {
-        trait_type: "Stamina",
-        value: 15,
-      },
-    ],
-  },
-  {
-    description: "So delicate.",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/flamingo.jpg",
-    name: "Flamingo",
-    attributes: [
-      {
-        trait_type: "BackgroundColor",
-        value: "black",
-      },
-      {
-        trait_type: "Eyes",
-        value: "googly",
-      },
-      {
-        trait_type: "Stamina",
-        value: 6,
-      },
-    ],
-  },
-  {
-    description: "Raaaar!",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/godzilla.jpg",
-    name: "Godzilla",
-    attributes: [
-      {
-        trait_type: "BackgroundColor",
-        value: "orange",
-      },
-      {
-        trait_type: "Eyes",
-        value: "googly",
-      },
-      {
-        trait_type: "Stamina",
-        value: 99,
-      },
-    ],
-  },
+  }
 ];
 
 export type NFTMetaData = (typeof nftsMetadata)[number];

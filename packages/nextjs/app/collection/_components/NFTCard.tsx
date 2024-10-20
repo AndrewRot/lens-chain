@@ -35,31 +35,31 @@ export const NFTCard = ({ nft }: { nft: Collectible }) => {
           <span className="text-lg font-semibold">Owner : </span>
           <Address address={nft.owner} />
         </div>
-        <div className="flex flex-col my-2 space-y-1">
-          <span className="text-lg font-semibold mb-1">Transfer To: </span>
-          <AddressInput
-            value={transferToAddress}
-            placeholder="receiver address"
-            onChange={newValue => setTransferToAddress(newValue)}
-          />
-        </div>
-        <div className="card-actions justify-end">
-          <button
-            className="btn btn-secondary btn-md px-8 tracking-wide"
-            onClick={() => {
-              try {
-                writeContractAsync({
-                  functionName: "transferFrom",
-                  args: [nft.owner, transferToAddress, BigInt(nft.id.toString())],
-                });
-              } catch (err) {
-                console.error("Error calling transferFrom function");
-              }
-            }}
-          >
-            Send
-          </button>
-        </div>
+        {/*<div className="flex flex-col my-2 space-y-1">*/}
+        {/*  <span className="text-lg font-semibold mb-1">Transfer To: </span>*/}
+        {/*  <AddressInput*/}
+        {/*    value={transferToAddress}*/}
+        {/*    placeholder="receiver address"*/}
+        {/*    onChange={newValue => setTransferToAddress(newValue)}*/}
+        {/*  />*/}
+        {/*</div>*/}
+        {/*<div className="card-actions justify-end">*/}
+        {/*  <button*/}
+        {/*    className="btn btn-secondary btn-md px-8 tracking-wide"*/}
+        {/*    onClick={() => {*/}
+        {/*      try {*/}
+        {/*        writeContractAsync({*/}
+        {/*          functionName: "transferFrom",*/}
+        {/*          args: [nft.owner, transferToAddress, BigInt(nft.id.toString())],*/}
+        {/*        });*/}
+        {/*      } catch (err) {*/}
+        {/*        console.error("Error calling transferFrom function");*/}
+        {/*      }*/}
+        {/*    }}*/}
+        {/*  >*/}
+        {/*    Send*/}
+        {/*  </button>*/}
+        {/*</div>*/}
       </div>
     </div>
   );
