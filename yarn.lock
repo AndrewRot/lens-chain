@@ -140,7 +140,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.19.4, @babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.23.2":
+=======
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.19.4, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.23.2":
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   version: 7.25.7
   resolution: "@babel/runtime@npm:7.25.7"
   dependencies:
@@ -196,6 +200,7 @@ __metadata:
     "@babel/helper-validator-identifier": ^7.25.7
     to-fast-properties: ^2.0.0
   checksum: 93d84858e820dbfa0fc4882b3ba6a421544d224ee61455a58eed0af9fc3518b30dc2166b8ba48cdd2e91083c5885ed773c36acf46d177b7b1fad9c35b6eb7639
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -212,6 +217,8 @@ __metadata:
   dependencies:
     "@chainsafe/is-ip": ^2.0.1
   checksum: 90d27154c11ff878130150766ebfc490c829cd5249a61f7018fa4cefe3a18d92394285bb435c38bd0dbe45261006a82572e95ac201e9b28157de80127a6a3d06
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -813,6 +820,7 @@ __metadata:
   version: 2.0.3
   resolution: "@humanwhocodes/object-schema@npm:2.0.3"
   checksum: d3b78f6c5831888c6ecc899df0d03bcc25d46f3ad26a11d7ea52944dc36a35ef543fad965322174238d677a43d5c694434f6607532cff7077062513ad7022631
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -842,6 +850,8 @@ __metadata:
   dependencies:
     multiformats: ^13.1.0
   checksum: dab4f1b1db852bde2a4507ff3ddf2110fd17e08e953355377708e07c27f53197673dac19a55e545de5b73fab6214701b7292b83f76c9848eb1cd642cbfc21bd3
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -908,6 +918,7 @@ __metadata:
     "@jridgewell/resolve-uri": ^3.1.0
     "@jridgewell/sourcemap-codec": ^1.4.14
   checksum: 9d3c40d225e139987b50c48988f8717a54a8c994d8a948ee42e1412e08988761d0754d7d10b803061cc3aebf35f92a5dbbab493bd0e1a9ef9e89a2130e83ba34
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -1026,6 +1037,8 @@ __metadata:
     multiformats: ^11.0.0
     uint8arrays: ^4.0.2
   checksum: da55aeaa974c170a2ed318845036f79ab0dbf6122f0ba9b76b67db6b3299f624a4a4abe2442b214e8931ee2475e9248da940574ac547a7247e62cdb8e5792d66
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -1185,9 +1198,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@metamask/sdk-communication-layer@npm:0.30.0":
   version: 0.30.0
   resolution: "@metamask/sdk-communication-layer@npm:0.30.0"
+=======
+"@metamask/sdk-communication-layer@npm:0.28.2":
+  version: 0.28.2
+  resolution: "@metamask/sdk-communication-layer@npm:0.28.2"
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   dependencies:
     bufferutil: ^4.0.8
     date-fns: ^2.29.3
@@ -1261,6 +1280,13 @@ __metadata:
     react-dom:
       optional: true
   checksum: 1aa5dda1f2bb4f4ee8f062f0798b09b2321172f87963e242f4e2658416705a0a554d3ff1283c2b64bc6d736383f6e31dd66ec24874d62bfffe25d0526a9f291c
+  languageName: node
+  linkType: hard
+
+"@metamask/superstruct@npm:^3.0.0, @metamask/superstruct@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@metamask/superstruct@npm:3.1.0"
+  checksum: 00e4d0c0aae8b25ccc1885c1db0bb4ed1590010570140c255e4deee3bf8a10c859c8fce5e475b4ae09c8a56316207af87585b91f7f5a5c028d668ccd111f19e3
   languageName: node
   linkType: hard
 
@@ -1403,6 +1429,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@multiformats/dns@npm:^1.0.3":
   version: 1.0.6
   resolution: "@multiformats/dns@npm:1.0.6"
@@ -1471,6 +1498,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+"@next/env@npm:14.2.15":
+  version: 14.2.15
+  resolution: "@next/env@npm:14.2.15"
+  checksum: bf794604ee62e86ca092120c790815c0caf367009966baa14e75dbd8454a59df524327539d5febc7da42841c3bf6a10443ae0f95280599352a8def56291857fd
+  languageName: node
+  linkType: hard
+
+"@next/eslint-plugin-next@npm:14.2.15":
+  version: 14.2.15
+  resolution: "@next/eslint-plugin-next@npm:14.2.15"
+  dependencies:
+    glob: 10.3.10
+  checksum: f4d2b7264d208d22a33a628e02d7bcad3527a7af5497164f71e286e9de02dbab8074087a8c9e4ef5e6cc0080c23d98ca756c7650cd6691ed53728a92985edcc4
+  languageName: node
+  linkType: hard
+
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "@next/swc-darwin-arm64@npm:14.2.15":
   version: 14.2.15
   resolution: "@next/swc-darwin-arm64@npm:14.2.15"
@@ -1584,7 +1629,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@noble/hashes@npm:1.3.2":
+=======
+"@noble/hashes@npm:1.3.2, @noble/hashes@npm:^1.3.1, @noble/hashes@npm:~1.3.0, @noble/hashes@npm:~1.3.2":
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   version: 1.3.2
   resolution: "@noble/hashes@npm:1.3.2"
   checksum: fe23536b436539d13f90e4b9be843cc63b1b17666a07634a2b1259dded6f490be3d050249e6af98076ea8f2ea0d56f578773c2197f2aa0eeaa5fba5bc18ba474
@@ -1928,6 +1977,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@openzeppelin/contracts@npm:^4.8.1":
   version: 4.9.6
   resolution: "@openzeppelin/contracts@npm:4.9.6"
@@ -1942,6 +1992,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+"@openzeppelin/contracts@npm:^5.0.2":
+  version: 5.1.0
+  resolution: "@openzeppelin/contracts@npm:5.1.0"
+  checksum: dd42b4b331912cc743bc7eb27c8cf9e78249909c065bb59513c00d66941444c085c4e3b2ebf1cdd89535c26497fc994a7ab028b3c88858b636694e3c9c2d622f
+  languageName: node
+  linkType: hard
+
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "@parcel/watcher-android-arm64@npm:2.4.1":
   version: 2.4.1
   resolution: "@parcel/watcher-android-arm64@npm:2.4.1"
@@ -2901,6 +2960,7 @@ __metadata:
   dependencies:
     "@types/ms": "*"
   checksum: 47876a852de8240bfdaf7481357af2b88cb660d30c72e73789abf00c499d6bc7cd5e52f41c915d1b9cd8ec9fef5b05688d7b7aef17f7f272c2d04679508d1053
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -2910,6 +2970,8 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: f7708c16ec367b14d75f3e662279911c17b5fdc2347389a21fc3c5d2b46400efd5446a3a45b6940a404e90d2e7b260d01041ca7764970d917241a5d4a5073936
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -2996,6 +3058,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@types/node-fetch@npm:^2.6.4":
   version: 2.6.11
   resolution: "@types/node-fetch@npm:2.6.11"
@@ -3012,6 +3075,14 @@ __metadata:
   dependencies:
     undici-types: ~6.19.2
   checksum: 70492e46d92bf00b537c8700322ad001c1f8d4fc65fc1627064a91c7edebb8ad18730b95a3c6bdff212dd0252a337a4b92e4cfcbc21c9f08616302e87ea855b8
+=======
+"@types/node@npm:*, @types/node@npm:22.7.5":
+  version: 22.7.5
+  resolution: "@types/node@npm:22.7.5"
+  dependencies:
+    undici-types: ~6.19.2
+  checksum: 1a8bbb504efaffcef7b8491074a428e5c0b5425b0c0ffb13e7262cb8462c275e8cc5eaf90a38d8fbf52a1eeda7c01ab3b940673c43fc2414140779c973e40ec6
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -3022,6 +3093,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@types/node@npm:22.7.5":
   version: 22.7.5
   resolution: "@types/node@npm:22.7.5"
@@ -3032,6 +3104,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^18.0.0, @types/node@npm:^18.11.18, @types/node@npm:^18.19.50":
+=======
+"@types/node@npm:^18.19.50":
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   version: 18.19.57
   resolution: "@types/node@npm:18.19.57"
   dependencies:
@@ -4212,6 +4287,7 @@ __metadata:
 "agent-base@npm:^7.0.2, agent-base@npm:^7.1.0, agent-base@npm:^7.1.1":
   version: 7.1.1
   resolution: "agent-base@npm:7.1.1"
+<<<<<<< HEAD
   dependencies:
     debug: ^4.3.4
   checksum: 51c158769c5c051482f9ca2e6e1ec085ac72b5a418a9b31b4e82fe6c0a6699adb94c1c42d246699a587b3335215037091c79e0de512c516f73b6ea844202f037
@@ -4221,9 +4297,11 @@ __metadata:
 "agentkeepalive@npm:^4.2.1":
   version: 4.5.0
   resolution: "agentkeepalive@npm:4.5.0"
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   dependencies:
-    humanize-ms: ^1.2.1
-  checksum: 13278cd5b125e51eddd5079f04d6fe0914ac1b8b91c1f3db2c1822f99ac1a7457869068997784342fe455d59daaff22e14fb7b8c3da4e741896e7e31faf92481
+    debug: ^4.3.4
+  checksum: 51c158769c5c051482f9ca2e6e1ec085ac72b5a418a9b31b4e82fe6c0a6699adb94c1c42d246699a587b3335215037091c79e0de512c516f73b6ea844202f037
   languageName: node
   linkType: hard
 
@@ -4563,6 +4641,7 @@ __metadata:
     is-array-buffer: ^3.0.4
     is-shared-array-buffer: ^1.0.2
   checksum: 352259cba534dcdd969c92ab002efd2ba5025b2e3b9bead3973150edbdf0696c629d7f4b3f061c5931511e8207bdc2306da614703c820b45dabce39e3daf7e3e
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -4570,6 +4649,8 @@ __metadata:
   version: 2.0.6
   resolution: "asap@npm:2.0.6"
   checksum: b296c92c4b969e973260e47523207cd5769abd27c245a68c26dc7a0fe8053c55bb04360237cb51cab1df52be939da77150ace99ad331fb7fb13b3423ed73ff3d
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -4733,6 +4814,7 @@ __metadata:
   dependencies:
     safe-buffer: ^5.0.1
   checksum: 52307739559e81d9980889de2359cb4f816cc0eb9a463028fa3ab239ab913d9044a1b47b4520f98e68453df32a457b8ba58b8d0ee7e757fc3fb971f3fa7a1482
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -4740,6 +4822,8 @@ __metadata:
   version: 1.0.0
   resolution: "base16@npm:1.0.0"
   checksum: 0cd449a2db0f0f957e4b6b57e33bc43c9e20d4f1dd744065db94b5da35e8e71fa4dc4bc7a901e59a84d5f8b6936e3c520e2471787f667fc155fb0f50d8540f5d
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -4889,6 +4973,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "browser-readablestream-to-it@npm:^1.0.0":
   version: 1.0.3
   resolution: "browser-readablestream-to-it@npm:1.0.3"
@@ -4903,6 +4988,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "browser-stdout@npm:^1.3.1":
   version: 1.3.1
   resolution: "browser-stdout@npm:1.3.1"
@@ -6206,6 +6293,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "electron-fetch@npm:^1.7.2":
   version: 1.9.1
   resolution: "electron-fetch@npm:1.9.1"
@@ -6222,6 +6310,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+"electron-to-chromium@npm:^1.5.28":
+  version: 1.5.41
+  resolution: "electron-to-chromium@npm:1.5.41"
+  checksum: 942cc53beabeb0647598d432155e2c21bed0de3dfd46576112aeed4157ea59543875c8a99038c5b05e8843fb3b91f14278ed4ea2bf4943845b26456ec20d2c9b
+  languageName: node
+  linkType: hard
+
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "elliptic@npm:6.5.4":
   version: 6.5.4
   resolution: "elliptic@npm:6.5.4"
@@ -6363,6 +6460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "err-code@npm:^3.0.1":
   version: 3.0.1
   resolution: "err-code@npm:3.0.1"
@@ -6447,6 +6545,85 @@ __metadata:
     call-bind: ^1.0.2
     get-intrinsic: ^1.1.3
     has-symbols: ^1.0.3
+=======
+"es-abstract@npm:^1.17.5, es-abstract@npm:^1.22.1, es-abstract@npm:^1.22.3, es-abstract@npm:^1.23.0, es-abstract@npm:^1.23.1, es-abstract@npm:^1.23.2, es-abstract@npm:^1.23.3":
+  version: 1.23.3
+  resolution: "es-abstract@npm:1.23.3"
+  dependencies:
+    array-buffer-byte-length: ^1.0.1
+    arraybuffer.prototype.slice: ^1.0.3
+    available-typed-arrays: ^1.0.7
+    call-bind: ^1.0.7
+    data-view-buffer: ^1.0.1
+    data-view-byte-length: ^1.0.1
+    data-view-byte-offset: ^1.0.0
+    es-define-property: ^1.0.0
+    es-errors: ^1.3.0
+    es-object-atoms: ^1.0.0
+    es-set-tostringtag: ^2.0.3
+    es-to-primitive: ^1.2.1
+    function.prototype.name: ^1.1.6
+    get-intrinsic: ^1.2.4
+    get-symbol-description: ^1.0.2
+    globalthis: ^1.0.3
+    gopd: ^1.0.1
+    has-property-descriptors: ^1.0.2
+    has-proto: ^1.0.3
+    has-symbols: ^1.0.3
+    hasown: ^2.0.2
+    internal-slot: ^1.0.7
+    is-array-buffer: ^3.0.4
+    is-callable: ^1.2.7
+    is-data-view: ^1.0.1
+    is-negative-zero: ^2.0.3
+    is-regex: ^1.1.4
+    is-shared-array-buffer: ^1.0.3
+    is-string: ^1.0.7
+    is-typed-array: ^1.1.13
+    is-weakref: ^1.0.2
+    object-inspect: ^1.13.1
+    object-keys: ^1.1.1
+    object.assign: ^4.1.5
+    regexp.prototype.flags: ^1.5.2
+    safe-array-concat: ^1.1.2
+    safe-regex-test: ^1.0.3
+    string.prototype.trim: ^1.2.9
+    string.prototype.trimend: ^1.0.8
+    string.prototype.trimstart: ^1.0.8
+    typed-array-buffer: ^1.0.2
+    typed-array-byte-length: ^1.0.1
+    typed-array-byte-offset: ^1.0.2
+    typed-array-length: ^1.0.6
+    unbox-primitive: ^1.0.2
+    which-typed-array: ^1.1.15
+  checksum: f840cf161224252512f9527306b57117192696571e07920f777cb893454e32999206198b4f075516112af6459daca282826d1735c450528470356d09eff3a9ae
+  languageName: node
+  linkType: hard
+
+"es-define-property@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "es-define-property@npm:1.0.0"
+  dependencies:
+    get-intrinsic: ^1.2.4
+  checksum: f66ece0a887b6dca71848fa71f70461357c0e4e7249696f81bad0a1f347eed7b31262af4a29f5d726dc026426f085483b6b90301855e647aa8e21936f07293c6
+  languageName: node
+  linkType: hard
+
+"es-errors@npm:^1.2.1, es-errors@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "es-errors@npm:1.3.0"
+  checksum: ec1414527a0ccacd7f15f4a3bc66e215f04f595ba23ca75cdae0927af099b5ec865f9f4d33e9d7e86f512f252876ac77d4281a7871531a50678132429b1271b5
+  languageName: node
+  linkType: hard
+
+"es-get-iterator@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "es-get-iterator@npm:1.1.3"
+  dependencies:
+    call-bind: ^1.0.2
+    get-intrinsic: ^1.1.3
+    has-symbols: ^1.0.3
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
     is-arguments: ^1.1.1
     is-map: ^2.0.2
     is-set: ^2.0.2
@@ -7481,6 +7658,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "fast-fifo@npm:^1.0.0":
   version: 1.3.2
   resolution: "fast-fifo@npm:1.3.2"
@@ -7488,6 +7666,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "fast-glob@npm:^3.0.3, fast-glob@npm:^3.2.7, fast-glob@npm:^3.2.9, fast-glob@npm:^3.3.0, fast-glob@npm:^3.3.2":
   version: 3.3.2
   resolution: "fast-glob@npm:3.3.2"
@@ -7549,6 +7729,7 @@ __metadata:
   dependencies:
     reusify: ^1.0.4
   checksum: a8c5b26788d5a1763f88bae56a8ddeee579f935a831c5fe7a8268cea5b0a91fbfe705f612209e02d639b881d7b48e461a50da4a10cfaa40da5ca7cc9da098d88
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -7580,6 +7761,8 @@ __metadata:
     setimmediate: ^1.0.5
     ua-parser-js: ^1.0.35
   checksum: e609b5b64686bc96495a5c67728ed9b2710b9b3d695c5759c5f5e47c9483d1c323543ac777a86459e3694efc5712c6ce7212e944feb19752867d699568bb0e54
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -7686,6 +7869,7 @@ __metadata:
   version: 3.3.1
   resolution: "flatted@npm:3.3.1"
   checksum: 85ae7181650bb728c221e7644cbc9f4bf28bc556f2fc89bb21266962bdf0ce1029cc7acc44bb646cd469d9baac7c317f64e841c4c4c00516afa97320cdac7f94
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -7698,6 +7882,8 @@ __metadata:
   peerDependencies:
     react: ^15.0.2 || ^16.0.0 || ^17.0.0
   checksum: 8fa5c2f9322258de3e331f67c6f1078a7f91c4dec9dbe8a54c4b8a80eed19a4f91889028b768668af4a796e8f2ee75e461e1571b8615432a3920ae95cc4ff794
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -7736,6 +7922,7 @@ __metadata:
     cross-spawn: ^7.0.0
     signal-exit: ^4.0.1
   checksum: 1989698488f725b05b26bc9afc8a08f08ec41807cd7b92ad85d96004ddf8243fd3e79486b8348c64a3011ae5cc2c9f0936af989e1f28339805d8bc178a75b451
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -7743,6 +7930,8 @@ __metadata:
   version: 1.7.2
   resolution: "form-data-encoder@npm:1.7.2"
   checksum: aeebd87a1cb009e13cbb5e4e4008e6202ed5f6551eb6d9582ba8a062005178907b90f4887899d3c993de879159b6c0c940af8196725b428b4248cec5af3acf5f
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -7754,6 +7943,7 @@ __metadata:
     combined-stream: ^1.0.8
     mime-types: ^2.1.12
   checksum: ccee458cd5baf234d6b57f349fe9cc5f9a2ea8fd1af5ecda501a18fd1572a6dd3bf08a49f00568afd995b6a65af34cb8dec083cf9d582c4e621836499498dd84
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -7764,6 +7954,8 @@ __metadata:
     node-domexception: 1.0.0
     web-streams-polyfill: 4.0.0-beta.3
   checksum: d91d4f667cfed74827fc281594102c0dabddd03c9f8b426fc97123eedbf73f5060ee43205d89284d6854e2fc5827e030cd352ef68b93beda8decc2d72128c576
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -7997,6 +8189,7 @@ __metadata:
     has-symbols: ^1.0.3
     hasown: ^2.0.0
   checksum: 414e3cdf2c203d1b9d7d33111df746a4512a1aa622770b361dadddf8ed0b5aeb26c560f49ca077e24bfafb0acb55ca908d1f709216ccba33ffc548ec8a79a951
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -8004,6 +8197,8 @@ __metadata:
   version: 1.0.2
   resolution: "get-iterator@npm:1.0.2"
   checksum: 4a819aa91ecb61f4fd507bd62e3468d55f642f06011f944c381a739a21f685c36a37feb9324c8971e7c0fc70ca172066c45874fa2d1dcdf4b4fb8e43f16058c2
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -8555,6 +8750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "hashlru@npm:^2.3.0":
   version: 2.3.0
   resolution: "hashlru@npm:2.3.0"
@@ -8562,6 +8758,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "hasown@npm:^2.0.0, hasown@npm:^2.0.1, hasown@npm:^2.0.2":
   version: 2.0.2
   resolution: "hasown@npm:2.0.2"
@@ -8703,6 +8901,7 @@ __metadata:
   version: 5.0.0
   resolution: "human-signals@npm:5.0.0"
   checksum: 6504560d5ed91444f16bea3bd9dfc66110a339442084e56c3e7fa7bbdf3f406426d6563d662bdce67064b165eac31eeabfc0857ed170aaa612cf14ec9f9a464c
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -8712,6 +8911,8 @@ __metadata:
   dependencies:
     ms: ^2.0.0
   checksum: 9c7a74a2827f9294c009266c82031030eae811ca87b0da3dceb8d6071b9bde22c9f3daef0469c3c533cc67a97d8a167cd9fc0389350e5f415f61a79b171ded16
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -8850,6 +9051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "interface-datastore@npm:^7.0.0":
   version: 7.0.4
   resolution: "interface-datastore@npm:7.0.4"
@@ -8889,6 +9091,12 @@ __metadata:
   version: 1.0.7
   resolution: "internal-slot@npm:1.0.7"
   dependencies:
+=======
+"internal-slot@npm:^1.0.4, internal-slot@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "internal-slot@npm:1.0.7"
+  dependencies:
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
     es-errors: ^1.3.0
     hasown: ^2.0.0
     side-channel: ^1.0.4
@@ -8931,6 +9139,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "ipfs-core-types@npm:^0.14.1":
   version: 0.14.1
   resolution: "ipfs-core-types@npm:0.14.1"
@@ -9018,6 +9227,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+"iron-webcrypto@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "iron-webcrypto@npm:1.2.1"
+  checksum: b158d1893c8d037c11a7dcfd1998b519f31f979643c2c505c6eb1170fd63553498a58b05947d5dea116975df8f12ede5ca235cb68e4c1f404fa6695e4508c60c
+  languageName: node
+  linkType: hard
+
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "is-arguments@npm:^1.0.4, is-arguments@npm:^1.1.1":
   version: 1.1.1
   resolution: "is-arguments@npm:1.1.1"
@@ -9136,6 +9354,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "is-electron@npm:^2.2.0":
   version: 2.2.2
   resolution: "is-electron@npm:2.2.2"
@@ -9143,6 +9362,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "is-extglob@npm:^2.1.1":
   version: 2.1.1
   resolution: "is-extglob@npm:2.1.1"
@@ -9422,6 +9643,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "iso-url@npm:^1.1.5":
   version: 1.2.1
   resolution: "iso-url@npm:1.2.1"
@@ -9429,6 +9651,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "isows@npm:1.0.3":
   version: 1.0.3
   resolution: "isows@npm:1.0.3"
@@ -9456,6 +9680,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "it-all@npm:^1.0.4":
   version: 1.0.6
   resolution: "it-all@npm:1.0.6"
@@ -9538,6 +9763,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "iterator.prototype@npm:^1.1.3":
   version: 1.1.3
   resolution: "iterator.prototype@npm:1.1.3"
@@ -9823,6 +10050,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "kubo-rpc-client@npm:^3.0.1":
   version: 3.0.4
   resolution: "kubo-rpc-client@npm:3.0.4"
@@ -9857,6 +10085,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+"language-subtag-registry@npm:^0.3.20":
+  version: 0.3.23
+  resolution: "language-subtag-registry@npm:0.3.23"
+  checksum: 0b64c1a6c5431c8df648a6d25594ff280613c886f4a1a542d9b864e5472fb93e5c7856b9c41595c38fac31370328fc79fcc521712e89ea6d6866cbb8e0995d81
+  languageName: node
+  linkType: hard
+
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "language-tags@npm:^1.0.9":
   version: 1.0.9
   resolution: "language-tags@npm:1.0.9"
@@ -10062,6 +10299,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "lodash.flow@npm:^3.3.0":
   version: 3.5.0
   resolution: "lodash.flow@npm:3.5.0"
@@ -10069,6 +10307,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
 "lodash.isequal@npm:4.5.0, lodash.isequal@npm:^4.5.0":
   version: 4.5.0
   resolution: "lodash.isequal@npm:4.5.0"
@@ -10642,7 +10882,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "ms@npm:^2.0.0, ms@npm:^2.1.1, ms@npm:^2.1.3":
+=======
+"ms@npm:^2.1.1, ms@npm:^2.1.3":
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
   checksum: aa92de608021b242401676e35cfa5aa42dd70cbdc082b916da7fb925c542173e36bce97ea3e804923fe92c0ad991434e4a38327e15a1b5b5f945d66df615ae6d
@@ -10699,7 +10943,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "nanoid@npm:^3.1.20, nanoid@npm:^3.3.6, nanoid@npm:^3.3.7":
+=======
+"nanoid@npm:^3.3.6, nanoid@npm:^3.3.7":
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   version: 3.3.7
   resolution: "nanoid@npm:3.3.7"
   bin:
@@ -10721,6 +10969,7 @@ __metadata:
   version: 1.1.3
   resolution: "napi-wasm@npm:1.1.3"
   checksum: c02424b9e26f152ea1224bdf950d09292ab5f2069644d878c96aa416316f05ba58ae9a6f39f664c592b523e6f39b6b0b831a5987b10e26ce2154da3b4f2b7859
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -10739,6 +10988,8 @@ __metadata:
   peerDependencies:
     undici: "*"
   checksum: 11e6d075aa03d40665a5fc438c56b535622fb4ee98eb2b035277c5ba47733cb4c7bc3ddb45e5ab8154869b509fc18ca1c0188ab271139ae89db14f9f552fc064
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -10871,6 +11122,7 @@ __metadata:
   dependencies:
     node-gyp: latest
   checksum: 46051999e3289f205799dfaf6bcb017055d7569090f0004811110312e2db94cb4f8654602c7eb77a60a1a05142cc2b96e1b5c56ca4622c41a5c6370787faaf30
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -10878,6 +11130,8 @@ __metadata:
   version: 1.0.0
   resolution: "node-domexception@npm:1.0.0"
   checksum: ee1d37dd2a4eb26a8a92cd6b64dfc29caec72bff5e1ed9aba80c294f57a31ba4895a60fd48347cf17dd6e766da0ae87d75657dfd1f384ebfa60462c2283f5c7f
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -12042,6 +12296,7 @@ __metadata:
   version: 2.3.1
   resolution: "punycode@npm:2.3.1"
   checksum: bb0a0ceedca4c3c57a9b981b90601579058903c62be23c5e8e843d2c2d4148a3ecf029d5133486fb0e1822b098ba8bba09e89d6b21742d02fa26bda6441a6fb2
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -12049,6 +12304,8 @@ __metadata:
   version: 1.3.0
   resolution: "pure-color@npm:1.3.0"
   checksum: 646d8bed6e6eab89affdd5e2c11f607a85b631a7fb03c061dfa658eb4dc4806881a15feed2ac5fd8c0bad8c00c632c640d5b1cb8b9a972e6e947393a1329371b
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -12854,7 +13111,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "se-2@workspace:."
   dependencies:
+<<<<<<< HEAD
     "@openzeppelin/contracts": ^5.1.0
+=======
+    ethers: ^6.13.4
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
     husky: ^8.0.1
     lint-staged: ^13.0.3
     uint8arrays: ^5.1.0
@@ -14040,6 +14301,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "tslib@npm:2.7.0":
   version: 2.7.0
   resolution: "tslib@npm:2.7.0"
@@ -14051,6 +14313,12 @@ __metadata:
   version: 2.8.0
   resolution: "tslib@npm:2.8.0"
   checksum: de852ecd81adfdb4870927e250763345f07dc13fe7f395ce261424966bb122a0992ad844c3ec875c9e63e72afe2220a150712984e44dfd1a8a7e538a064e3d46
+=======
+"tslib@npm:2.7.0, tslib@npm:^2.0.0, tslib@npm:^2.1.0, tslib@npm:^2.3.1, tslib@npm:^2.4.0":
+  version: 2.7.0
+  resolution: "tslib@npm:2.7.0"
+  checksum: 1606d5c89f88d466889def78653f3aab0f88692e80bb2066d090ca6112ae250ec1cfa9dbfaab0d17b60da15a4186e8ec4d893801c67896b277c17374e36e1d28
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
@@ -14294,7 +14562,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "ua-parser-js@npm:^1.0.35, ua-parser-js@npm:^1.0.37":
+=======
+"ua-parser-js@npm:^1.0.37":
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   version: 1.0.39
   resolution: "ua-parser-js@npm:1.0.39"
   bin:
@@ -14414,7 +14686,11 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "undici@npm:5.28.4, undici@npm:^5.12.0, undici@npm:^5.14.0":
+=======
+"undici@npm:5.28.4, undici@npm:^5.14.0":
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   version: 5.28.4
   resolution: "undici@npm:5.28.4"
   dependencies:
@@ -14589,6 +14865,7 @@ __metadata:
     "@types/react":
       optional: true
   checksum: df690f2032d56aabcea0400313a04621429f45bceb4d65d38829b3680cae3856470ce72958cb7224b332189d8faef54662a283c0867dd7c769f9a5beff61787d
+<<<<<<< HEAD
   languageName: node
   linkType: hard
 
@@ -14633,6 +14910,8 @@ __metadata:
     "@types/react":
       optional: true
   checksum: ed3f2ddddf6f21825e2ede4c2e0f0db8dcce5129802b69d1f0575fc1b42380436e8c76a6cd885d4e9aa8e292e60fb8b959c955f33c6a9123b83814a1a1875367
+=======
+>>>>>>> 53b2aa5 (formatting, remove unused components, add available)
   languageName: node
   linkType: hard
 
